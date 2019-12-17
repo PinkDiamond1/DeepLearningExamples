@@ -1,3 +1,9 @@
+# Lambda Note
+
+```
+sudo pbzip2 -v -d -k -m10000 enwiki-latest-pages-articles.xml.bz2
+```
+
 # BERT For PyTorch
 
 This repository provides a script and recipe to train the BERT model for PyTorch to achieve state-of-the-art accuracy, and is tested and maintained by NVIDIA.
