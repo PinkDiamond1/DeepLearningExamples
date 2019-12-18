@@ -80,7 +80,7 @@ def main(args):
                 path_to_wikiextractor_in_container = '/workspace/wikiextractor/WikiExtractor.py'
                 wikiextractor_command = path_to_wikiextractor_in_container + ' ' + directory_structure['download'] + '/' + args.dataset + '/wikicorpus_en.xml ' + '-b 100M --processes ' + str(args.n_processes) + ' -o ' + directory_structure['extracted'] + '/' + args.dataset
                 print('WikiExtractor Command:', wikiextractor_command)
-                wikiextractor_process = subprocess.run(wikiextractor_command, shell=True, check=True)
+                #wikiextractor_process = subprocess.run(wikiextractor_command, shell=True, check=True)
                 #wikiextractor_process.communicate()
 
             wiki_path = directory_structure['extracted'] + '/wikicorpus_en'
