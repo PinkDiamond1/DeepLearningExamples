@@ -130,6 +130,6 @@ tensorflow_code
 # Models
 models
 
-
+data/*
 data/formatted_one_article_per_line/
 data/formatted_one_article_per_line_full/
