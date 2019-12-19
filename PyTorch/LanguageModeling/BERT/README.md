@@ -31,7 +31,7 @@ _Time to Train (hours)_
 
 | | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | 
 |---|---|---|---|---|---|
-| BERT Large | 95.12 | 44.77 | 153.16 | 128.6 | 58.4 |
+| BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 |
 
 
 # BERT For PyTorch
