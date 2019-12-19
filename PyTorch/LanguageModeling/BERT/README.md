@@ -10,11 +10,14 @@ Here are the links to download the ready-to-use data (670 MB): [phase1](https://
 Build and launch the docker container using this [Quick Start Guide](#quick-start-guide). Then run the following command to train from scratch, including both the "phase 1" pre-training and "phase 2" fine-tuning steps.
 
 ```
-# Hyperplane 8
+# Hyperplane 8xV100 32GB
 bash scripts/run_pretraining.sh
 
-# Hyperplane 16
+# Hyperplane 16xV100 32GB
 bash scripts/run_pretraining_16.sh
+
+# Blade 8xQuadro8000
+bash scripts/run_pretraining.sh |& tee "log_bladequadro8000.txt"
 ```
 
 ### Results
