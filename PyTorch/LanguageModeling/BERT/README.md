@@ -3,7 +3,7 @@
 ### Data preparation
 It will takes a couple of days to finish the data preparation using the [Getting the data](#getting-the-data) guideline. For this reason, we provide ready-to-use data for a small fraction of the dataset. This allows testing the training throughput, from which a fairly accurate time-to-solution can be testimated.
 
-Here are the links to download the ready-to-use data (670 MB): [phase1]() and [phase2](). Unzip them to the `DeepLearningExamples/PyTorch/LanguageModeling/BERT/data` directory and you are good to go. 
+Here are the links to download the ready-to-use data (670 MB): [phase1](https://lambdalabs-files.s3-us-west-2.amazonaws.com/hdf5_lower_case_1_seq_len_128_max_pred_20_masked_lm_prob_0.15_random_seed_12345_dupe_factor_5.zip) and [phase2](https://lambdalabs-files.s3-us-west-2.amazonaws.com/hdf5_lower_case_1_seq_len_512_max_pred_80_masked_lm_prob_0.15_random_seed_12345_dupe_factor_5.zip). Unzip them to the `DeepLearningExamples/PyTorch/LanguageModeling/BERT/data` directory and you are good to go. 
 
 ### Run benchmark
 
