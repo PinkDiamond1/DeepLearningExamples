@@ -1,8 +1,41 @@
 # Lambda Note
 
+### Data preparation
+It will takes a couple of days to finish the data preparation using the [Getting the data](#getting-the-data) guideline. For this reason, we provide ready-to-use data for a small fraction of the dataset. This allows testing the training throughput, from which a fairly accurate time-to-solution can be testimated.
+
+Here are the links to download the ready-to-use data (670 MB): [phase1]() and [phase2](). Unzip them to the `DeepLearningExamples/PyTorch/LanguageModeling/BERT/data` directory and you are good to go. 
+
+### Run benchmark
+
+Build and launch the docker container using this [Quick Start Guide](#quick-start-guide). Then run the following command to train from scratch, including both the "phase 1" pre-training and "phase 2" fine-tuning steps.
+
 ```
-sudo pbzip2 -v -d -k -m10000 enwiki-latest-pages-articles.xml.bz2
+# Hyperplane 8
+bash scripts/run_pretraining.sh
+
+# Hyperplane 16
+bash scripts/run_pretraining_16.sh
 ```
+
+### Results
+
+_Throughput (sequence/s) for phase 1 and phase 2_
+
+```
+| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | 
+|---|---|---|---|---|---|
+| BERT Large | 1479.68 / 280.96 | 3143.68/597.76 | 919.04/194.56 | 1305.6/231.68 | 2775.04/488.96 |
+```
+
+
+_Time to Train (hours)_
+
+```
+| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | 
+|---|---|---|---|---|---|
+| BERT Large | 95.12 | 44.77 | 153.16 | 128.6 | 58.4 |
+```
+
 
 # BERT For PyTorch
 
