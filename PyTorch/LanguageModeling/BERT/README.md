@@ -25,16 +25,16 @@ bash scripts/run_pretraining.sh |& tee "log_bladequadro8000.txt"
 _Throughput (sequence/s) for phase 1 and phase 2_
 
 
-| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | 
-|---|---|---|---|---|---|
-| BERT Large | 1479.68 / 280.96 | 3143.68/597.76 | 919.04/194.56 | 1305.6/231.68 | 2775.04/488.96 |
+| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 |
+|---|---|---|---|---|---|---|
+| BERT Large | 1479.68 / 280.96 | 3143.68/597.76 | 919.04/194.56 | 1305.6/231.68 | 2775.04/488.96 | 1320.96/246.4 |
 
 
 _Time to Train (hours)_
 
 | | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | 
-|---|---|---|---|---|---|
-| BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 |
+|---|---|---|---|---|---|---|
+| BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 | 106.55 (estimated) |
 
 
 # BERT For PyTorch
