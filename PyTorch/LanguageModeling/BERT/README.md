@@ -25,16 +25,16 @@ bash scripts/run_pretraining.sh |& tee "log_bladequadro8000.txt"
 _Throughput (sequence/s) for phase 1 and phase 2_
 
 
-| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 |
-|---|---|---|---|---|---|---|
-| BERT Large | 1479.68 / 280.96 | 3143.68/597.76 | 919.04/194.56 | 1305.6/231.68 | 2775.04/488.96 | 1320.96/246.4 |
+| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 | 8xRTX3090 |
+|---|---|---|---|---|---|---|---|
+| BERT Large | 1479.68 / 280.96 | 3143.68/597.76 | 919.04/194.56 | 1305.6/231.68 | 2775.04/488.96 | 1320.96/246.4 |1122.99/237.60 |
 
 
 _Time to Train (hours)_
 
-| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 |
+| | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 | 8xRTX3090 |
 |---|---|---|---|---|---|---|
-| BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 | 106.55 (estimated) |
+| BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 | 106.55 (estimated) | 125.54 (estimated)|
 
 
 # BERT For PyTorch
