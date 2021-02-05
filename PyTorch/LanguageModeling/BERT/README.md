@@ -18,6 +18,9 @@ bash scripts/run_pretraining_16.sh
 
 # Blade 8xQuadro8000
 bash scripts/run_pretraining.sh |& tee "log_bladequadro8000.txt"
+
+# 8x3090
+bash scripts/run_pretraining_8x3090.sh
 ```
 
 ### Results
