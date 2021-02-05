@@ -33,7 +33,7 @@ _Throughput (sequence/s) for phase 1 and phase 2_
 _Time to Train (hours)_
 
 | | Hyperplane 8 | Hyperplane 16 | DGX1 16GB | DGX1 32GB | DGX2 32GB | Blade 8xQuadro8000 | 8xRTX3090 |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | BERT Large | 95.12 (estimated) | 44.77 (estimated) | 153.16 | 128.6 | 58.4 | 106.55 (estimated) | 125.54 (estimated)|
 
 
